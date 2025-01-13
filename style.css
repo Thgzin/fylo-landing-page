@@ -195,8 +195,6 @@ p {
   text-wrap: wrap;
 }
 
-
-
 img {
   width: 100%;
   height: auto;
@@ -280,8 +278,17 @@ button {
 }
 
 .span-content {
-  margin-top: -90px;
+  margin-top: 10px;
   margin-left: 110px;
+}
+
+@media screen and (max-width: 650px) {
+  .span-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+  }
 }
 
 .arrow-image {
@@ -291,8 +298,9 @@ button {
 }
 
 .box {
-  max-width: 40rem;
-  padding: 5.75rem;
+  max-width: 30rem;
+  padding: 5.5rem;
+  height: 250px;
   display: grid;
   place-items: center;
   margin: 6rem;
@@ -301,22 +309,76 @@ button {
   box-shadow: -0.5px 0px 2px var(--Light-Gray); /* Sombra suave e cinza */
 }
 
+.illusration-2-image {
+  padding-top: 6rem;
+}
+
 .quotes {
   position: relative;
-  top: -80px;
+  top: -55px;
   width: 1.1rem;
   order: -1;
-  margin-left: -490px;
+  margin-left: -465px;
+}
+
+@media screen and (max-width: 650px) {
+  .quotes {
+    margin-left: -290px;
+  }
 }
 
 .avatar {
-  width: 2.5rem;
+  width: 2.8rem;
+  margin-top: -130px;
+  margin-left: -450px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .avatar {
+    order: 1;
+    margin-top: -270px;
+    margin-left: -350px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box-text {
+    text-align: left;
+    position: relative;
+    left: -40px;
+    width: 150px;
+
+    margin-top: -98px;
+  }
+}
+
+.avatar-text {
+  display: grid;
+  place-items: center;
+  text-wrap: nowrap;
+  padding-top: 8px;
+  position: relative;
+  left: -100px;
 }
 
 .box-text {
-  width: 100%;
-  position: relative;
-  top: 30px;
-  margin-left: 60px;
+  padding-top: 50px;
+  margin-left: 2rem;
+
+  font-size: 16px;
 }
 
+.avatar-text b {
+  margin-left: -50px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+}
