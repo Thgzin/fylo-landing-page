@@ -315,22 +315,22 @@ button {
 
 .quotes {
   position: relative;
-  top: -55px;
-  width: 1.1rem;
+  top: -45px;
+  width: 1.3rem;
   order: -1;
-  margin-left: -465px;
+  margin-left: -450px;
 }
 
 @media screen and (max-width: 650px) {
   .quotes {
-    margin-left: -290px;
+    margin-left: -360px;
   }
 }
 
 .avatar {
   width: 2.8rem;
   margin-top: -130px;
-  margin-left: -450px;
+  margin-left: -460px;
   border-radius: 100%;
 }
 
@@ -344,19 +344,16 @@ button {
 
 @media screen and (max-width: 650px) {
   .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
+    margin: 6rem 1rem;
+    padding: 4.5rem;
+    width: 460px;
   }
 
   .box-text {
     text-align: left;
-    position: relative;
-    left: -40px;
-    width: 150px;
-
-    margin-top: -98px;
+    margin-top: -100px;
   }
 }
 
@@ -364,14 +361,15 @@ button {
   display: grid;
   place-items: center;
   text-wrap: nowrap;
+
   padding-top: 8px;
   position: relative;
-  left: -100px;
+  left: -110px;
 }
 
 .box-text {
-  padding-top: 50px;
-  margin-left: 2rem;
+  padding-top: 60px;
+  margin-left: -2rem;
 
   font-size: 16px;
 }
@@ -381,4 +379,15 @@ button {
   font-weight: bold;
   font-size: 1.2rem;
   letter-spacing: 1.2px;
+}
+
+@media screen and (max-width: 650px) {
+  .avatar-text b {
+    margin-left: 57px;
+    margin-top: -10px;
+  }
+
+  .avatar-text span {
+    margin-left: 115px;
+  }
 }
