@@ -614,3 +614,46 @@ button {
     margin: 0 auto;
   }
 }
+
+footer {
+  background-color: var(--Very-Dark-Blue);
+  width: 100%;
+  min-height: 250px;
+}
+
+.footer-logo {
+  padding: 5rem;
+  width: 300px;
+  height: 200px;
+  display: block;
+}
+
+.footer-logo img {
+  color: var(--Light-Gray);
+}
+
+.phone-image {
+  width: 15px;
+  margin-left: 5px;
+}
+
+li {
+  color: var(--Light-Gray);
+  margin-left: 30px;
+}
+
+.last-footer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.phone-div {
+  margin-top: -35px;
+  margin-left: 70px;
+}
+
+.phone-div span {
+  margin-left: 10px;
+  color: var(--Light-Gray);
+}
