@@ -20,10 +20,14 @@
   list-style: none;
 }
 
+html,
 body {
   overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -406,7 +410,8 @@ button {
   color: var(--Light-Grayish-Blue);
   margin: 3rem 5rem;
   padding-top: 5rem;
-  width: 100%;
+
+  margin-left: -150px;
 }
 
 .footer-content span {
@@ -618,7 +623,16 @@ button {
 footer {
   background-color: var(--Very-Dark-Blue);
   width: 100%;
-  min-height: 250px;
+  min-height: 50vh;
+  margin-top: auto; /* Isso garante que o footer vai para o final */
+}
+
+@media screen and (max-width: 750px) {
+  footer {
+    min-height: 70vh;
+    margin-top: auto;
+    width: 100%;
+  }
 }
 
 .footer-logo {
@@ -656,4 +670,110 @@ li {
 .phone-div span {
   margin-left: 10px;
   color: var(--Light-Gray);
+}
+
+.email-div {
+  margin-top: 15px;
+  margin-left: 70px;
+}
+
+.email-div span {
+  margin-left: 10px;
+  color: var(--Light-Gray);
+}
+
+.footer-ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+}
+
+.second-footer-ul {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: -120px;
+}
+
+.footer-li {
+  margin-left: 1330px;
+  margin-top: -40px;
+  color: white;
+}
+
+.second-footer-li {
+  margin-left: 1650px;
+  margin-top: -40px;
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 1070px;
+  }
+  .footer-li {
+    padding-top: 30px;
+    font-size: 15px;
+  }
+
+  .second-footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -1600px;
+    margin-top: 40px;
+  }
+  .second-footer-li {
+    margin-top: 2px;
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: -70px;
+    margin-top: 10px;
+  }
+  .footer-li {
+    margin-top: 5px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+  .footer-li {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    margin-left: -1270px;
+    margin-top: 50px;
+  }
+  .footer-li {
+    margin-top: -20px;
+    font-size: 15px;
+  }
 }
